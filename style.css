@@ -1,0 +1,47 @@
+/* Applique un style de fond animé */
+body {
+    background: linear-gradient(45deg, #ff00ff, #00ffff, #ffcc00, #ff0066);
+    background-size: 400% 400%;
+    animation: backgroundAnimation 80ms infinite alternate;
+    color: white;
+    font-family: 'Comic Sans MS', cursive;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Animation du fond */
+@keyframes backgroundAnimation {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+
+/* Texte avec effet glitch */
+#title {
+    font-size: 3em;
+    text-shadow: 0px 0px 10px #ff00ff, 0px 0px 20px #00ffff;
+}
+
+/* Paragraphe animé */
+#random-text {
+    font-size: 2em;
+    margin-top: 20px;
+    transition: transform 0.5s ease-in-out;
+}
+
+#random-image {
+    width: 400px;  /* Taille des images */
+    height: auto;
+    margin-top: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.8);
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Effet de zoom sur l'image */
+#random-image:hover {
+    transform: scale(1.1);
+}
