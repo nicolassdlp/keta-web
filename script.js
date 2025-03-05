@@ -8,11 +8,11 @@ const phrases = [
 ];
 
 const images = [
-    "media/57052517b33c12cf5bfee4ce7e377f74.jpg",
-    "media/images.jpeg",
-    "media/5fa903c2459f5.jpeg",
-    "media/artworks-000153711665-60oe6w-t500x500.jpg",
-    "media/1.jpg.webp"
+    "57052517b33c12cf5bfee4ce7e377f74.jpg",
+    "images.jpeg",
+    "5fa903c2459f5.jpeg",
+    "artworks-000153711665-60oe6w-t500x500.jpg",
+    "1.jpg.webp"
 ];
 
 // Fonction pour changer le texte et l'image aléatoirement
@@ -47,7 +47,7 @@ document.addEventListener("mousemove", function(event) {
 });
 
 // Ajout d'un son étrange
-const audio = new Audio("media/BRUIT QUI FAIT PEUR 😱.mp3");
+const audio = new Audio("BRUIT QUI FAIT PEUR 😱.mp3");
 audio.loop = true;
 audio.volume = 1; // Régle le volume entre 0 et 1
 
